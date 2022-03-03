@@ -76,7 +76,6 @@ section {
   color: #024e76;
   background-color: #fce138;
   padding: 20px;
-  border: solid 3px #024e76;
   width: 15%;
   margin: 10% 5% 0 0;
   
@@ -118,6 +117,69 @@ section {
 
 
 /*end of about me */
+
+.grid {
+    min-height: 500;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 185%;
+  }
+  .grid > div {
+    display: flex; 
+    flex-basis: calc(100% - 40px);  
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  .grid > div > div {
+    display: flex;
+    justify-content: baseline;
+    flex-direction: row;
+  }
+  
+  .grid2x2 {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 188%;
+  }
+  .grid2x2 > div {
+    display: flex; 
+    flex-basis: calc(50% - 40px);  
+    justify-content:flex-end;
+    flex-direction: column;
+  }
+  .grid2x2 > div > div {
+    display: flex;
+    justify-content:first baseline;
+    flex-direction: row;
+  }
+  
+  .box { margin: 10px;
+    border: solid 5px #024e76;padding: 0 0 5px 0}
+  .box1 { background-color: red; }
+  .box2 { background-color: orange; }
+  .box3 { background-color: purple; }
+  .box4 { background-color: grey; }
+
+  .box h1{
+    width: 150px;
+    border: 5px solid #024e76;
+    padding: 0 50 0 0;
+    margin: 0;
+    height: 40px;
+    background-color: #024e76;
+  }
+  .box p{
+    width: 150px;
+    border: 5px solid #024e76;
+    padding: 0 0 0 0;
+    margin: 0;
+    height: 35px;
+    background-color: #024e76;
+  }
+  
 .flex-item {
     display:flex;
     align-items: center;
