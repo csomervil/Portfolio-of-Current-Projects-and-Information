@@ -64,8 +64,8 @@ section {
 }
 
 .hero {
-  background-color: #024e76;
-  background-size: cover;
+  background-image: url("../images/background.jpg");
+  background-size: auto;
   background-position: center;
   display: flex;
   justify-content: right;
