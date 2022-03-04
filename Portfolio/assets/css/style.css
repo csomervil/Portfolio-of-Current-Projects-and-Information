@@ -1,13 +1,12 @@
 * {
-    margin: 0px 0px 0px 0px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-body {
-    color: #39a6b2;
-    font-family: Helvetica, Arial, sans-serif;
-  }
+
+
+/* Header section */
 header {
     padding: 10px 35px 10px 0px;
     background-color: darkslategrey;
@@ -24,13 +23,6 @@ header {
     border: 15px solid skyblue;
     background-color: skyblue;
 }
-
-header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: #fce138;
-    margin: 0;
-  }
   
 header a {
     text-decoration: none;
@@ -60,6 +52,7 @@ header nav ul li a {
     font-size: 1.55vw;
   }
 
+  /* Hero section */
 section {
   padding: 10px 100px 10px 60px;
 }
@@ -73,16 +66,18 @@ section {
   flex-wrap: wrap;
   align-items: flex-end;
 }  
+
 .hero-form {
-  color: #024e76;
-  background-color: black;
-  padding: 20px;
+  color: black;
+  background-image: url("../images/Me.jpg");
+  background-position: center;
+  padding: 100 0 0 0;
   width: 15%;
   margin: 10% 5% 0 0;
   text-decoration-line:underline;
   text-decoration-style: wavy;
-  text-decoration-color: white;
-  
+  text-decoration-color: darkblue;
+  height: 150px;
 }
 
 .hero-form h3 {
@@ -90,37 +85,64 @@ section {
   text-align: center;
 }
 
-.section-title {
-  font-size: 48px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-}
-
-.primary-border {
-  border-color: #fce138;
-}
-
-.secondary-border {
-  border-color: #39a6b2;
-}
-/* about me */
-
-.about h1 {
-    color: skyblue;
-  width: 495px;
-  border-right: 6px solid black;
-  height: 200px;
-  left: 50%;
-  padding-left: 130;
+  /* Body section */
+body {
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
   }
 
+.info-container{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+ 
+.info-container p{
+     padding: 0;
+     margin: 0 0 10px;
+ }
 
-/*end of about me */
+  /* About Me section */
+.about {
+    padding-right: 10px;
+    justify-content: space-between;
+}
 
+.about h1 {
+  color: skyblue;
+  width: 440.5px;
+  border-right: 6px solid black;
+  height: 210px;
+  left: 50%;
+  margin-left: 70px;
+  }
+
+.about div div p {
+    height: 190px;
+    padding-left: 10px;
+    padding-right: 60px;
+}
+
+
+  /* Work section */
+.work {
+    padding-right: 10px;
+    justify-content: space-between;
+}
+.work h1 {
+    color: skyblue;
+    width: 376px;
+    border-right: 6px solid black;
+    height: 1180px;
+    padding-left: 130;
+    padding-right: 20px;
+    margin-left: 75px;
+}
+
+ /* Big Box Layout */
 .grid {
     min-height: 500;
     display: flex;
@@ -139,7 +161,8 @@ section {
     justify-content: baseline;
     flex-direction: row;
   }
-  
+
+  /* Small Box Layout */
   .grid2x2 {
     min-height: 500px;
     display: flex;
@@ -159,37 +182,32 @@ section {
     justify-content:baseline;
     flex-direction: row;
   }
-  
-  
-  .box { 
+
+  /* Box Style */  
+.box { 
     margin: 10px;
     border: solid 5px #024e76;
     padding: 0 0 5px 0;
-    
+    filter:sepia(60%)
 }
-  .box0 { background-image: url("../images/run-buddy.png");  }
-  .box1 {background-image: url("../images/fanpage.png")}
-  .box1 a {background-image: url("../images/fanpage.png");
-    width: 100%;
-    height: 100% }
-  .box2 { background-image: url("../images/box.png"); background-size:cover}
-  .box2 a {background-image: url("../images/box.png"); background-size:cover;
-    width: 100%;
-    height: 100% }
-  .box3 { background-image: url("../images/robot-gladiators.png"); }
-  .box3 a {background-image: url("../images/robot-gladiators.png");
-    width: 100%;
-    height: 100% }
-  .box4 { background-image: url("../images/Horiseon-screenshot.png"); }
-  .box4 a {background-image: url("../images/Horiseon-screenshot.png");
-    width: 100%;
-    height: 100% }
 
-  .box:hover {
-    transform: scale(1.005)
-  }
-    
-  .box0 h1{
+.flex-item {
+    display:flex;
+    align-items: center;
+}
+
+.box:hover {
+    transform: scale(1.005);
+    filter: none;
+    transition-duration: 0.1s;
+}
+
+ /* Big Box Style */  
+.box0 { 
+    background-image: url("../images/run-buddy.png");
+}
+
+.box0 h1{
     width: 150px;
     border: 5px solid #024e76;
     padding: 0 0 0 0;
@@ -197,9 +215,9 @@ section {
     height: 40px;
     background-color: #024e76;
     font-size: 18;
-  }
+}
   
-  .box0 p{
+.box0 p{
     width: 150px;
     border: 5px solid #024e76;
     padding: 0 0 0 0;
@@ -208,9 +226,42 @@ section {
     background-color: #024e76;
     filter:none;
     font-size: 15;
-  }
+}
 
-  .box1 h1, .box2 h1, .box3 h1, .box4 h1{
+ /* Small Box Style */  
+.box1 {background-image: url("../images/fanpage.png")
+}
+
+.box1 a {background-image: url("../images/fanpage.png");
+    width: 100%;
+    height: 100% 
+}
+
+  .box2 { background-image: url("../images/box.png"); background-size:cover
+}
+
+  .box2 a {background-image: url("../images/box.png"); background-size:cover;
+    width: 100%;
+    height: 100% 
+}
+
+  .box3 { background-image: url("../images/robot-gladiators.png");
+}
+
+.box3 a {background-image: url("../images/robot-gladiators.png");
+    width: 100%;
+    height: 100% 
+}
+
+  .box4 { background-image: url("../images/Horiseon-screenshot.png"); 
+}
+
+  .box4 a {background-image: url("../images/Horiseon-screenshot.png");
+    width: 100%;
+    height: 100% 
+}
+
+.box1 h1, .box2 h1, .box3 h1, .box4 h1{
     width: 150px;
     border: 5px solid whitesmoke;
     padding: 0 0 0 0;
@@ -218,9 +269,9 @@ section {
     height: 40px;
     background-color: whitesmoke;
     font-size: 18;
-  }
+}
 
-  .box1 p, .box2 p, .box3 p, .box4 p{
+.box1 p, .box2 p, .box3 p, .box4 p{
     width: 150px;
     border: 5px solid whitesmoke;
     padding: 0 0 0 0;
@@ -229,39 +280,14 @@ section {
     background-color: whitesmoke;
     filter:none;
     font-size: 15;
-  }
-
-  
-  
-.flex-item {
-    display:flex;
-    align-items: center;
 }
+  
+ /* Contact Me Section */
 .flex-contacts {
     display:flex;
     align-items: center;
     justify-content: space-around;
 }
-.flex-card {
-    display:flex;
-    align-items: center;
-}
-
-
-.info-container{
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 0 0 5px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
- }
- 
- .info-container p{
-     padding: 0;
-     margin: 0 0 10px;
- }
-
 
 .contact {
   color: skyblue;
@@ -272,11 +298,11 @@ section {
 
 .contact h1 {
   color: skyblue;
-  width: 495px;
+  width: 445px;
   border-right: 6px solid black;
   height: 200px;
   left: 50%;
-  padding-left: 130;
+  margin-left: 50px;
   margin-bottom: 30px;
 }
 
@@ -302,8 +328,6 @@ section {
   color: skyblue;
   font-size: 32px;
 }
-
-/* CONTACT END */
 
 
 /* Ajusting for all users */
@@ -381,6 +405,7 @@ section {
   .contact-info > * {
     flex: 0 100%;
   }
+
 }
 
 * {
