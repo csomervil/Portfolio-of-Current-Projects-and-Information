@@ -4,7 +4,10 @@
     box-sizing: border-box;
   }
 
+html {
+    scroll-behavior: smooth;
 
+}
 
 /* Header section */
 header {
@@ -68,15 +71,12 @@ section {
 }  
 
 .hero-form {
-  color: black;
+  color: white;
   background-image: url("../images/Me.jpg");
   background-position: center;
   padding: 100 0 0 0;
   width: 15%;
   margin: 10% 5% 0 0;
-  text-decoration-line:underline;
-  text-decoration-style: wavy;
-  text-decoration-color: darkblue;
   height: 150px;
 }
 
@@ -113,7 +113,7 @@ body {
 
 .about h1 {
   color: skyblue;
-  width: 440.5px;
+  width: 380.5px;
   border-right: 6px solid black;
   height: 210px;
   left: 50%;
@@ -163,7 +163,7 @@ body {
 
  /* Big Box Layout */
 .grid {
-    min-height: 500;
+    min-height:500px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -331,41 +331,24 @@ body {
   /* Box Adjusting */
 @media screen and (max-width: 1860px) {
     .grid {
-        width: 600%;
+        width: 127%;
     }
     .grid2x2 {
-        flex-direction: column;
-        width: 500%;
+        
+        width: 130%;
     }
 }
 
-@media screen and (max-width: 1560px) {
+@media screen and (max-width: 1430px) {
     .grid {
-        width: 460%;
+        width: 97%;
     }
     .grid2x2 {
-        flex-direction: column;
-        width: 360%;
+        
+        width: 100%;
     }
-}
-
-@media screen and (max-width: 1320px) {
-    .grid {
-        width: 360%;
-    }
-    .grid2x2 {
-        flex-direction: column;
-        width: 260%;
-    }
-}
-
-@media screen and (max-width: 1140px) {
-    .grid {
-        width: 260%;
-    }
-    .grid2x2 {
-        flex-direction: column;
-        width: 160%;
+    .about h1 {
+        width: 600px;
     }
 }
 
@@ -394,21 +377,31 @@ body {
 
     footer h2, footer div {
         text-align: center;
-        width: 100%;
+        width: 97%;
     }
     
     .hero-form {
         width: 100%;
     }
 
-    .work {
-        padding-left: 0;
+    .about h1 {
+        width: 64%;
+    }
+
+    .work h1 {
+        margin-left: 0px;
+    }
+
+    .grid {
+        width: 96%;
     }
     .grid2x2 {
-        flex-direction: column;
+        width: 100%;
     }
-    header a {
-        text-underline-offset: 0px;
+
+    .contact h1 {
+        padding-left:58px;
+        padding-right: 50px;
     }
 
 } 
@@ -417,26 +410,6 @@ body {
 
     section {
         padding: 30px 15px;
-    }
-
-}
-
-@media screen and (max-width: 575px) {
-
-    .section-title {
-        width: 95%;
-    }
-
-    .intro p {
-        width: 100%;
-    }
-
-    .contact-info {
-        text-align: center;
-    }
-
-    .contact-info > * {
-        flex: 0 100%;
     }
 
 }
